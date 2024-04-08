@@ -13,3 +13,4 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
 * **Note that the details of training configuration which are not mentioned in this document and the comments can be defined yourself.** For example, decide how many epochs you will train the model. 
 
 ## Report
+<img src = "image/lenet5_noregul_acc.png" width="80", height="80">
