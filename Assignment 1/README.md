@@ -41,4 +41,4 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
   <img src = "Image/lenet5_regul_loss.png" width="700", height="500">
   <img src = "Image/lenet5_regul_acc.png" width="700", height="500">
 </div>
-* I employed dropout and RandomAffine augmentation as a regularization technique. LeNet-5 with regularization exhibited **0.9929** test data accuracy and outperformed previous LeNet-5 model. So we can see that the regularization technique was helpful to the model performance.
+* I employed dropout and RandomAffine augmentation as a regularization technique. LeNet-5 with regularization exhibited <b>0.9929</b> test data accuracy and outperformed previous LeNet-5 model. So we can see that the regularization technique was helpful to the model performance.
