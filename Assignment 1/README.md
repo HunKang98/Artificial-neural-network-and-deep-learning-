@@ -2,6 +2,7 @@
 In this assignment, you build a neural network classifier with MNIST dataset. For a detailed description about MNIST dataset, please refer to this [link](http://yann.lecun.com/exdb/mnist/).
 * Due date: 2024. 04. 16. Tue 23:59
 * Submission: Personal Github repo URL
+* `dataset.py`, `model.py`, `main.py`, `README.md` (Report) files
 * Requirements
 1. You should write your own pipeline to provide data to your model. Write your code in the template `dataset.py`. Please read the comments carefully and follow those instructions.
 2. (Report) Implement LeNet-5 and your custom MLP models in `model.py`. Some instructions are given in the file as comments. Note that your custom MLP model should have about the same number of model parameters with LeNet-5. Describe the number of model parameters of LeNet-5 and your custom MLP and how to compute them in your report.
