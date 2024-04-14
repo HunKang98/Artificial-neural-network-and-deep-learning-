@@ -33,7 +33,7 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
 </div>
 
 3. (Report) Compare the predictive performances of LeNet-5 and your custom MLP. Also, make sure that the accuracy of LeNet-5 (your implementation) is similar to the known accuracy.
-* LeNet-5 exhibited an accuracy of **0.9902** on the test dataset, whereas custom MLP exhibited **0.9738**. LeNet-5 outperformed the custom MLP avoiding overfitting problem.
+* LeNet-5 exhibited an accuracy of **0.9902** on the test dataset, whereas custom MLP exhibited **0.9762**. LeNet-5 outperformed the custom MLP avoiding overfitting problem.
 
 4. (Report) Employ at least more than two regularization techniques to improve LeNet-5 model. You can use whatever techniques if you think they may be helpful to improve the performance. Verify that they actually help improve the performance.
 * I employed dropout and RandomAffine augmentation as a regularization technique. LeNet-5 with regularization exhibited <b>0.9905</b> test data accuracy and outperformed previous LeNet-5 model. So we can see that the regularization technique was helpful to the model performance.
