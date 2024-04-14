@@ -23,15 +23,15 @@ class LeNet5(nn.Module):
         if dropout:
             self.classifier = nn.Sequential(
                 nn.Flatten(),
-                nn.Linear(in_features=16*25, out_features=120), nn.ReLU(),
-                nn.Linear(in_features=120, out_features=84), nn.ReLU(),
+                nn.Linear(in_features=16*25, out_features=120), nn.ReLU(), nn.Dropout(0.5),
+                nn.Linear(in_features=120, out_features=84), nn.ReLU(), nn.Dropout(0.5),
                 nn.Linear(in_features=84, out_features=10)
             )
         else:
             self.classifier = nn.Sequential(
                 nn.Flatten(),
-                nn.Linear(in_features=16*25, out_features=120), nn.ReLU(), nn.Dropout(0.5),
-                nn.Linear(in_features=120, out_features=84), nn.ReLU(), nn.Dropout(0.5),
+                nn.Linear(in_features=16*25, out_features=120), nn.ReLU(),
+                nn.Linear(in_features=120, out_features=84), nn.ReLU(),
                 nn.Linear(in_features=84, out_features=10)
             )
 
