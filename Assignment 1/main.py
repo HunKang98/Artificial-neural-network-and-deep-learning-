@@ -105,7 +105,7 @@ def main():
     lenet_model = LeNet5(dropout=False).to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(lenet_model.parameters(), lr=1e-3)
+    optimizer = optim.SGD(lenet_model.parameters(), lr=0.01, momentum=0.9)
 
     epochs = 30
     trn_loss_li = []
@@ -146,7 +146,7 @@ def main():
     lenet_model2 = LeNet5(dropout=True).to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(lenet_model2.parameters(), lr=1e-3)
+    optimizer = optim.SGD(lenet_model2.parameters(), lr=0.01, momentum=0.9)
 
     epochs = 30
     trn_loss_li = []
@@ -187,7 +187,7 @@ def main():
     mlp = CustomMLP().to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(mlp.parameters(), lr=1e-3)
+    optimizer = optim.SGD(mlp.parameters(), lr=0.01, momentum=0.9)
 
     epochs = 30
     trn_loss_li = []
