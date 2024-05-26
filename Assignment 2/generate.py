@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     seed_characters = [['The'], ['I'], ['Me'], ['You'], ['That']]
 
-    temps = [0.2, 0.4, 0.6, 0.8, 1.0] 
+    temps = [0.2, 0.6, 0.8, 1.0, 1.5] 
 
     for temperature in temps:
         print('**********************************************')
