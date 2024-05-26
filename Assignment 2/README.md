@@ -26,4 +26,92 @@ y_{i} = \frac{\text{exp}(z_{i}/T)}{\sum\text{exp}(z_{i}/T)}
 * Although LSTM achieved lower loss than RNN on the training dataset, both LSTM and RNN converged to similar loss values on the validation dataset.
 
 2. (Report) Try different temperatures when you generate characters, and discuss what difference the temperature makes and why it helps to generate more plausible results.
-* Seed characters = 'The', 'I', 'Me', 'You', 'That'
+* As the temperature parameter increases, the uniformity of sampling probabilities among characters increases. Therefore, more meaningless sentences are generated when the temperature parameter is high. On the other hand, when the temperature parameter is very low, the uniformity of sampling probabilities among characters decreases significantly, resulting in the repetition of specific characters. In other words, by adjusting the temperature parameter appropriately, it is possible to generate more meaningful sentences. 
+* Seed characters : 'The', 'I', 'Me', 'You', 'That'
+* Temperature: 0.2
+
+
+**The** t t he the he the t s t toure t t thar the t the he t that the t t the the t we the the thend s<br>
+**I** the the an t t s mange the t thanour thano the the t t t t t t t s t s t t t t t t t t the t the t<br>
+**Me**nge we t t t t t s t he t t t t t the t the the the t t t t we t the t t the t ar the t t t the t<br>
+**You** t the t me he the t the t t t t t s t at t t the thanour at t the t t t the the the t t t the t<br>
+**That** the t the me he the t the t t t t the the the t thare t the s t t the t t t the the t t t t the<br>
+* Temperature : 0.6
+
+
+**The** we t t haleandst I thweston br anonat than tha hange t as ct ande athe wo I me thind t wathaco w<br>
+**I**Nod t do weror ge ie t t sthes pst ithary ke CORKn p thor s werenpe t the n s ans k wonged had we d<br>
+**Me**nd the met be we tous t t there d t mar m t ble cinge me t an am s p, o s hale maller o thera al o<br>
+**You** the t bl as bund he w aispat lde t thove winge f se t coundore o pe no ther sth hange hange vice<br>
+**That** t, rngeno war be y t he y s pindis th cind f t sy s pshisthe at lle wes w, arer pulerme o t map<br>
+* Temperature : 0.8
+
+
+**The**r t t ang tes the wouspanitim s she third<br>
+
+
+We a igron'd hintomanea, ff t mo hounguno prashe y t.<br>
+**I**f thow<br>
+ANI yon tonowamyold, my y sandicen-<br>
+n pr thatl;:<br>
+LAl, at d yot thopargeatof I ft arera mel b<br>
+**Me**ny wanthay dith bupathaf ELA:<br>
+S:<br>
+
+Ghar m th d were hitoungorant.<br>
+AN'd hat perano an wes pange fo y<br>
+**You**re shillle t t my are f fle bepl at e ttawoust theer me yarid t he w, ffuresttef ound tindils s b<br>
+**That** e g arung ald ource here her:<br>
+Thingarou'sst my e Pll anceid. un tive the anond s IUSe RI ou, d<br>
+* Temperature : 1.0
+
+  
+**The** R--<br>
+Tuntrd t y d, e ke t o core.<br>
+S:<br>
+USourt we a mids, d s.<br>
+BRl, hile her t s merer y?<br>
+Topr:<br>
+AENI<br>
+**I**ZA yoven awfungntamoulo usheaqur st,n--d brd amy.<br>
+Whed he murch t o thar eatom,<br>
+IA tswe Setekt ou k<br>
+**Me**nd nen; ht m h ink t id ttinlenth ther th y ashand mes blfamousthe<br>
+Fid, y m io: fo ac, th ire m br<br>
+**You**rshove<br>
+Fugoon'd we houricormast we d al:<br>
+Se d<br>
+
+LAse ocan--<br>
+HANI t-'d ck Cariththabal thende thuun<br>
+**That** bofr t menoro sherizettheangendit t pl y! thasor bysl f geyothis.<br>
+Weny tithe anoryowondint<br>
+Ton<br>
+* Temperature : 1.5
+
+  
+**The** gerlticid-& k'xuntiengfomillomectad Bele ckm c hu!<br>
+IUnt core cl to ormeir arep bok ustoy R:serac<br>
+**I** gem, t<br>
+I;<br>
+SOYoeve Jwsttove t thawanveatogk cie bsk che<br>
+BORe wblapolef lize o iqurthts?<br>
+GELUNZAwhen<br>
+**Me**s, til, LIts le f wnina a,<br>
+Tur sbodim,<br>
+CTe n'EYos Lquneyal<br>
+ornd u mad-Od 'dmyo 'meem amOOheguthem'<br>
+**You** dy's..<br>
+DUSI; hidiler wotifrisuPRItsh'Edadonar wnd<br>
+Mum?<br>
+Itig<br>
+nids.<br>
+NI<br>
+afar;<br>
+CIA: ps.<br>
+OUSB:'d:<br>
+Ud<br>
+**That** cou, ghoDK-me st y y:<br>
+Wa s DEdaconcig, t ary sprrdin ts? p ool lodil!<br>
+Foarny I icokzrrww, MENAu<br>
+
