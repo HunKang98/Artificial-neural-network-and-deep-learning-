@@ -15,4 +15,15 @@ y_{i} = \frac{\text{exp}(z_{i}/T)}{\sum\text{exp}(z_{i}/T)}
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Try different temperatures when you generate characters, and discuss what difference the temperature makes and why it helps to generate
 &nbsp;&nbsp;&nbsp;&nbsp;more plausible results.
-* **Note that the details of training configuration which are not mentioned in this document and the comments can be defined yourself.** For example, decide how many epochs you will train the model. 
+* **Note that the details of training configuration which are not mentioned in this document and the comments can be defined yourself.** For example, decide how many epochs you will train the model.
+
+## Report
+1. (Report) Plot the average loss values for training and validation. Compare the language generation performances of vanilla RNN and LSTM in terms of loss values for validation dataset.
+<div align="center">
+  <img src = "Image/loss_plot.png" width="700", height="500">
+</div>
+
+* Although LSTM achieved lower loss than RNN on the training dataset, both LSTM and RNN converged to similar loss values on the validation dataset.
+
+2. (Report) Try different temperatures when you generate characters, and discuss what difference the temperature makes and why it helps to generate more plausible results.
+* Seed characters = 'The', 'I', 'Me', 'You', 'That'
