@@ -36,7 +36,7 @@ def generate(model, seed_characters, temperature, char_idx, idx_char, max_length
 
         with torch.no_grad():
             for _ in range(max_length - len(seed[0])):
-                output, _ = model(input_idx, hidden)
+                output, hidden = model(input_idx, hidden)
                 output = output[:, -1, :] / temperature
                 probabilities = F.softmax(output, dim=-1)
                 next_char_idx = torch.multinomial(probabilities, 1).item()
