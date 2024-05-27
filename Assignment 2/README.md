@@ -26,7 +26,7 @@ y_{i} = \frac{\text{exp}(z_{i}/T)}{\sum\text{exp}(z_{i}/T)}
 * Although LSTM achieved lower loss than RNN on the training dataset, both LSTM and RNN converged to similar loss values on the validation dataset.
 
 2. (Report) Try different temperatures when you generate characters, and discuss what difference the temperature makes and why it helps to generate more plausible results.
-* As the temperature parameter increases, the uniformity of sampling probabilities among characters also increases. Therefore, more meaningless sentences are generated when the temperature parameter is high. Conversely, when the temperature parameter is low, the sampling probability converges to a one-hot vector, resulting in more meaningful sentences. Thus, by appropriately adjusting the temperature parameter, it is possible to generate more meaningful sentences. 
+* As the temperature increases, the uniformity of sampling probabilities among characters also increases. Therefore, meaningless sentences are generated when the temperature is high. Conversely, when the temperature is low, the sampling probability converges to a one-hot vector, resulting in more meaningful sentences. Thus, by appropriately adjusting the temperature, it is possible to generate more meaningful sentences. 
 * Seed characters : 'The', 'I', 'Me', 'You', 'That'
 * Temperature: 0.2
 
