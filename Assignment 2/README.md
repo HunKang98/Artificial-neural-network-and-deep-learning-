@@ -26,92 +26,125 @@ y_{i} = \frac{\text{exp}(z_{i}/T)}{\sum\text{exp}(z_{i}/T)}
 * Although LSTM achieved lower loss than RNN on the training dataset, both LSTM and RNN converged to similar loss values on the validation dataset.
 
 2. (Report) Try different temperatures when you generate characters, and discuss what difference the temperature makes and why it helps to generate more plausible results.
-* As the temperature parameter increases, the uniformity of sampling probabilities among characters increases. Therefore, more meaningless sentences are generated when the temperature parameter is high. On the other hand, when the temperature parameter is very low, the uniformity of sampling probabilities among characters decreases significantly, resulting in the repetition of specific characters. In other words, by adjusting the temperature parameter appropriately, it is possible to generate more meaningful sentences. 
+* As the temperature parameter increases, the uniformity of sampling probabilities among characters also increases. Therefore, more meaningless sentences are generated when the temperature parameter is high. Conversely, when the temperature parameter is low, the sampling probability converges to a one-hot vector, resulting in more meaningful sentences. Thus, by appropriately adjusting the temperature parameter, it is possible to generate more meaningful sentences. 
 * Seed characters : 'The', 'I', 'Me', 'You', 'That'
 * Temperature: 0.2
 
 
-**The** t t he the he the t s t toure t t thar the t the he t that the t t the the t we the the thend s<br>
-**I** the the an t t s mange the t thanour thano the the t t t t t t t s t s t t t t t t t t the t the t<br>
-**Me**nge we t t t t t s t he t t t t t the t the the the t t t t we t the t t the t ar the t t t the t<br>
-**You** t the t me he the t the t t t t t s t at t t the thanour at t the t t t the the the t t t the t<br>
-**That** the t the me he the t the t t t t the the the t thare t the s t t the t t t the the t t t t the<br>
+**The** people the state the child the consuls<br>
+With his faint the state the common the father the man th<br>
+**I**  thank the common the state the people the good country stand the country's faint the world the peo<br>
+**Me**neread of the common the gods to see the country to your peace the common the world the people to<br>
+**You** have the common the state the common a faint of the good marks to love the people to the common<br>
+**That** I shall the man his blood the common a grace the country's grace the gods in the state the comm<br>
 * Temperature : 0.6
 
 
-**The** we t t haleandst I thweston br anonat than tha hange t as ct ande athe wo I me thind t wathaco w<br>
-**I**Nod t do weror ge ie t t sthes pst ithary ke CORKn p thor s werenpe t the n s ans k wonged had we d<br>
-**Me**nd the met be we tous t t there d t mar m t ble cinge me t an am s p, o s hale maller o thera al o<br>
-**You** the t bl as bund he w aispat lde t thove winge f se t coundore o pe no ther sth hange hange vice<br>
-**That** t, rngeno war be y t he y s pindis th cind f t sy s pshisthe at lle wes w, arer pulerme o t map<br>
+**The**reign, and where to did shall the malry of the enought.<br><br>
+
+Volsce:<br>
+And I will thou all, when I had<br>
+**I**NG EDWARD IV:<br>
+Or gentle still cholies, be but the voices for thee a body, I have you did in the com<br>
+**Me**enenius that what the blood thee love of all the lord, the fall the people,<br>
+That well of your heart<br>
+**You**  have she prayer into the supplion the heart.<br><br>
+
+SICINIUS:<br>
+The senate<br>
+Than the butter delly say; an<br>
+**That**  being own.<br><br>
+
+BUCKINGHAM:<br>
+I have hear with here of his never for the eyes the pity of him to the<br>
 * Temperature : 0.8
 
 
-**The**r t t ang tes the wouspanitim s she third<br>
+**The**ir falling vengear again;<br>
+And gentle saford, and toly sound of service with this you.<br>
 
+CORIOLANUS<br>
+**I**devil with a world<br>
+That may not he bear the man friends,<br>
+Nor no live is now, there atterpation.<br><br>
 
-We a igron'd hintomanea, ff t mo hounguno prashe y t.<br>
-**I**f thow<br>
-ANI yon tonowamyold, my y sandicen-<br>
-n pr thatl;:<br>
-LAl, at d yot thopargeatof I ft arera mel b<br>
-**Me**ny wanthay dith bupathaf ELA:<br>
-S:<br>
+G<br>
+**Me**nenius Triberal honours, and you this at right shall over did pratest therefore thou had book'd th<br>
+**You**for ece to lame is he please not therem a worth, cares you the person;<br>
+If we were for not withan<br>
+**That** shall hearts, or do?<br><br>
 
-Ghar m th d were hitoungorant.<br>
-AN'd hat perano an wes pange fo y<br>
-**You**re shillle t t my are f fle bepl at e ttawoust theer me yarid t he w, ffuresttef ound tindils s b<br>
-**That** e g arung ald ource here her:<br>
-Thingarou'sst my e Pll anceid. un tive the anond s IUSe RI ou, d<br>
+GLOUCESTER:<br>
+O bread us.<br><br>
+
+AUFIDIUS:<br>
+He pats, dreet,<br>
+That he warant to your<br>
 * Temperature : 1.0
 
   
-**The** R--<br>
-Tuntrd t y d, e ke t o core.<br>
-S:<br>
-USourt we a mids, d s.<br>
-BRl, hile her t s merer y?<br>
-Topr:<br>
-AENI<br>
-**I**ZA yoven awfungntamoulo usheaqur st,n--d brd amy.<br>
-Whed he murch t o thar eatom,<br>
-IA tswe Setekt ou k<br>
-**Me**nd nen; ht m h ink t id ttinlenth ther th y ashand mes blfamousthe<br>
-Fid, y m io: fo ac, th ire m br<br>
-**You**rshove<br>
-Fugoon'd we houricormast we d al:<br>
-Se d<br>
+**The**rein to expoits!<br><br>
 
-LAse ocan--<br>
-HANI t-'d ck Cariththabal thende thuun<br>
-**That** bofr t menoro sherizettheangendit t pl y! thasor bysl f geyothis.<br>
-Weny tithe anoryowondint<br>
-Ton<br>
+BRUTUS:<br>
+Was will she<br>
+And says accuse press<br>
+Offor, you would thy wret let not,<br>
+S<br>
+**I**NNAM:<br>
+Nay, service not slived flenery royal you send, and<br>
+baze princian stady.<br><br>
+
+GLOUCESTER:<br>
+Nay, my<br>
+**Me**<br>
+Then you too if flind me to dearny.<br><br>
+
+Bowthip<br>
+Of that this hight thee a news.<br><br>
+
+VALERIA:<br>
+Hazvantagh<br>
+**You** stand me interread's enemame to purpotion; you are disses, and charg the rast<br>
+speak of pansing a<br>
+**That** he the Dold<br>
+For set be four fault to voices, you canfhich<br>
+his intertling'?<br>
+I will shall shall s<br>
 * Temperature : 1.5
 
   
-**The** gerlticid-& k'xuntiengfomillomectad Bele ckm c hu!<br>
-IUnt core cl to ormeir arep bok ustoy R:serac<br>
-**I** gem, t<br>
-I;<br>
-SOYoeve Jwsttove t thawanveatogk cie bsk che<br>
-BORe wblapolef lize o iqurthts?<br>
-GELUNZAwhen<br>
-**Me**s, til, LIts le f wnina a,<br>
-Tur sbodim,<br>
-CTe n'EYos Lquneyal<br>
-ornd u mad-Od 'dmyo 'meem amOOheguthem'<br>
-**You** dy's..<br>
-DUSI; hidiler wotifrisuPRItsh'Edadonar wnd<br>
-Mum?<br>
-Itig<br>
-nids.<br>
-NI<br>
-afar;<br>
-CIA: ps.<br>
-OUSB:'d:<br>
-Ud<br>
-**That** cou, ghoDK-me st y y:<br>
-Wa s DEdaconcig, t ary sprrdin ts? p ool lodil!<br>
-Foarny I icokzrrww, MENAu<br>
+**The**refores no.<br>
+Through once, careing.<br><br>
+
+for'd, thatquil he? war's swere you, Caties:<br>
+Malt beispain;<br>
+L<br>
+**I**US::<br>
+My merm, jugh'st: Lename in<br>
+may;-:<br>
+Not at subblate.<br><br>
+
+ARCHBISHOP OF YORK.<br>
+TELUEEN ELIZABEFY:<br>
+Wh<br>
+**Me**nerers!<br>
+I frughteh<br>
+Than's thether bostly frong,--<br><br>
+
+SICINIUS:<br>
+Doyys<br>
+Histir-hohsirjy, sibty,<br>
+Your we<br>
+**You**ld frwure; murder mine.<br>
+Ivit, how love belosh? -Botfeen sagle:<br>
+One give the deqresitity, arservy,<br>
+**That** cites? Whos denqu<br>
+The clay thou loses?--<br>
+sher<br>
+She knows us:<br>
+Ye fod.<br><br>
+
+BRUTUS:<br>
+Give men-ear,<br>
+And<br>
 
