@@ -68,21 +68,22 @@ def validate(model, val_loader, device, criterion):
     model.eval()
     total_loss = 0.0
     n = len(val_loader.dataset)
-
-    for X, y in val_loader:
-        X, y = X.to(device), y.to(device)
-        hidden = model.init_hidden(len(X))
-
-        if isinstance(hidden, tuple):
-            hidden = tuple(h.to(device) for h in hidden)
-        else:
-            hidden = hidden.to(device)
-
-        pred, _ = model(X, hidden)
-        pred = pred.permute(0,2,1)
-        loss = criterion(pred, y)
-
-        total_loss += loss.item()
+    
+    with torch.no_grad():    
+        for X, y in val_loader:
+            X, y = X.to(device), y.to(device)
+            hidden = model.init_hidden(len(X))
+    
+            if isinstance(hidden, tuple):
+                hidden = tuple(h.to(device) for h in hidden)
+            else:
+                hidden = hidden.to(device)
+    
+            pred, _ = model(X, hidden)
+            pred = pred.permute(0,2,1)
+            loss = criterion(pred, y)
+    
+            total_loss += loss.item()
 
     val_loss = total_loss / n
 
